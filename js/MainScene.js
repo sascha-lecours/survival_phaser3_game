@@ -14,7 +14,7 @@ export default class MainScene extends Phaser.Scene {
         this.load.tilemapTiledJSON('map', 'assets/images/map.json');
     }
 
-    create(){
+    create() {
         // Tilemap setup
         const map = this.make.tilemap({ key: 'map' });
         this.map = map;
@@ -39,7 +39,7 @@ export default class MainScene extends Phaser.Scene {
 
     }
 
-    update(){
+    update() {
         this.player.update();
     }
 
